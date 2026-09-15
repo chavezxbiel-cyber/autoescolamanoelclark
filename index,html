@@ -1,1 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Escola Manoel Clark | Formação de Condutores</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 (ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --secondary: #ffc107;
+      --dark: #212529;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(135deg, rgba(13, 110, 253, 0.92), rgba(13, 110, 253, 0.75)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      padding: 6rem 0;
+      color: white;
+    }
+    .hero h1 {
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+    .card-servico {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      height: 100%;
+    }
+    .card-servico:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .icon-circle {
+      width: 70px;
+      height: 70px;
+      background-color: rgba(13, 110, 253, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .bg-cinza-claro {
+      background-color: #f8f9fa;
+    }
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      border: none;
+    }
+    .btn-whatsapp:hover {
+      background-color: #1ebe5c;
+      color: white;
+    }
+    footer a {
+      color: #ced4da;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    .info-item i {
+      width: 24px;
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
 
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="fas fa-car me-2"></i>Auto Escola Manoel Clark
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="btn btn-warning ms-2 fw-semibold" href="#contato">Agende sua aula</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 mb-4">Sua habilitação começa aqui</h1>
+      <p class="lead mb-5 fs-4">Auto Escola Manoel Clark – Formação de condutores com qualidade e confiança em Linhares/ES.</p>
+      <a href="#contato" class="btn btn-warning btn-lg px-5 py-3 fw-bold me-2">Fale conosco</a>
+      <a href="#servicos" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">Nossos serviços</a>
+    </div>
+  </header>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Nossos Serviços</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-servico p-4 text-center">
+            <div class="icon-circle mx-auto"><i class="fas fa-id-card"></i></div>
+            <h4 class="fw-bold">Primeira Habilitação</h4>
+            <p class="text-muted">Categorias A, B e AB. Aulas teóricas e práticas com instrutores experientes e veículos modernos.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-servico p-4 text-center">
+            <div class="icon-circle mx-auto"><i class="fas fa-motorcycle"></i></div>
+            <h4 class="fw-bold">Moto e Carro</h4>
+            <p class="text-muted">Aprenda a pilotar motos e dirigir carros com segurança. Frota própria e acompanhamento personalizado.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-servico p-4 text-center">
+            <div class="icon-circle mx-auto"><i class="fas fa-sync-alt"></i></div>
+            <h4 class="fw-bold">Renovação e Reciclagem</h4>
+            <p class="text-muted">Renove sua CNH, faça reciclagem para condutores infratores ou atualize seus conhecimentos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE / INFORMAÇÕES DA EMPRESA -->
+  <section id="sobre" class="py-5 bg-cinza-claro">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-4">Sobre a Auto Escola Manoel Clark</h2>
+          <p class="lead mb-3">Formando condutores conscientes e preparados desde 2020.</p>
+          <p>A empresa <strong>Auto Escola Manoel Clark</strong> (CNPJ 38.799.350/0001-32), com razão social <strong>Centro de Formacao de Condutores Mc LTDA</strong>, foi fundada em <strong>23/09/2020</strong> e está localizada na cidade de <strong>Linhares – Espírito Santo</strong>.</p>
+          <p>Sua atividade principal, conforme a Receita Federal, é <strong>85.99-6-01 – Formação de condutores</strong>. Situação cadastral: <span class="badge bg-success">Ativa</span>.</p>
+          <p class="mb-1"><i class="fas fa-user-tie me-2 text-primary"></i><strong>Sócio-Administrador:</strong> Alessandra de Moraes Sousa</p>
+          <p><i class="fas fa-calendar-alt me-2 text-primary"></i><strong>Fundada em:</strong> 23/09/2020</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-white p-4 rounded-4 shadow-sm">
+            <h5 class="fw-bold mb-3"><i class="fas fa-building me-2 text-primary"></i>Informações de Registro</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="fas fa-fingerprint text-secondary me-2"></i><strong>CNPJ:</strong> 38.799.350/0001-32</li>
+              <li class="mb-2"><i class="fas fa-briefcase text-secondary me-2"></i><strong>Razão Social:</strong> Centro de Formacao de Condutores Mc LTDA</li>
+              <li class="mb-2"><i class="fas fa-store text-secondary me-2"></i><strong>Nome Fantasia:</strong> Auto Escola Manoel Clark</li>
+              <li class="mb-2"><i class="fas fa-map-pin text-secondary me-2"></i><strong>Localização:</strong> Av. Vitória, 1667 – Centro, Linhares/ES – CEP 29900-085</li>
+              <li class="mb-2"><i class="fas fa-envelope text-secondary me-2"></i><strong>E-mail:</strong> cfcmanoelclarcksm@hotmail.com</li>
+              <li class="mb-2"><i class="fas fa-phone-alt text-secondary me-2"></i><strong>Telefone:</strong> (27) 98833-6213</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO / LOCALIZAÇÃO -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Entre em contato</h2>
+      <div class="row g-4">
+        <div class="col-md-5">
+          <div class="bg-light p-4 rounded-4 h-100">
+            <h5 class="fw-bold mb-4"><i class="fas fa-address-card me-2 text-primary"></i>Contatos</h5>
+            <div class="info-item d-flex mb-3">
+              <i class="fas fa-envelope mt-1"></i>
+              <div class="ms-3">
+                <strong>E-mail</strong><br>
+                <a href="mailto:cfcmanoelclarcksm@hotmail.com" class="text-decoration-none">cfcmanoelclarcksm@hotmail.com</a>
+              </div>
+            </div>
+            <div class="info-item d-flex mb-3">
+              <i class="fas fa-phone-alt mt-1"></i>
+              <div class="ms-3">
+                <strong>Telefone / WhatsApp</strong><br>
+                <a href="tel:+5527988336213" class="text-decoration-none">(27) 98833-6213</a>
+              </div>
+            </div>
+            <div class="info-item d-flex mb-3">
+              <i class="fas fa-map-marker-alt mt-1"></i>
+              <div class="ms-3">
+                <strong>Endereço</strong><br>
+                Avenida Vitória, 1667 – Centro<br>
+                Linhares – ES, 29900-085
+              </div>
+            </div>
+            <div class="info-item d-flex mb-3">
+              <i class="fas fa-user-tie mt-1"></i>
+              <div class="ms-3">
+                <strong>Responsável</strong><br>
+                Alessandra de Moraes Sousa – Sócio-Administrador
+              </div>
+            </div>
+            <a href="https://wa.me/5527988336213?text=Olá,%20gostaria%20de%20agendar%20uma%20aula%20na%20Auto%20Escola%20Manoel%20Clark" target="_blank" class="btn btn-whatsapp w-100 py-2 mt-3 fw-semibold">
+              <i class="fab fa-whatsapp me-2"></i>Chamar no WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="bg-light p-4 rounded-4 h-100">
+            <h5 class="fw-bold mb-4"><i class="fas fa-paper-plane me-2 text-primary"></i>Envie uma mensagem</h5>
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Seu nome" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                </div>
+                <div class="col-12">
+                  <input type="tel" class="form-control" placeholder="Telefone/WhatsApp">
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" rows="4" placeholder="Mensagem (ex: gostaria de informações sobre primeira habilitação)" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary px-4 py-2 fw-semibold">Enviar mensagem</button>
+                </div>
+              </div>
+            </form>
+            <p class="text-muted small mt-3 mb-0">*Este formulário é demonstrativo. Para contato imediato, utilize o WhatsApp ou telefone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ COM POLÍTICA DE PRIVACIDADE -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold"><i class="fas fa-car me-2"></i>Auto Escola Manoel Clark</h5>
+          <p class="small text-secondary mt-3">Formação de condutores com qualidade e responsabilidade. CNPJ 38.799.350/0001-32.</p>
+          <p class="small text-secondary">Razão Social: Centro de Formacao de Condutores Mc LTDA</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Contato rápido</h5>
+          <ul class="list-unstyled small mt-3">
+            <li class="mb-2"><i class="fas fa-envelope me-2"></i>cfcmanoelclarcksm@hotmail.com</li>
+            <li class="mb-2"><i class="fas fa-phone me-2"></i>(27) 98833-6213</li>
+            <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Av. Vitória, 1667 – Centro, Linhares/ES</li>
+            <li class="mb-2"><i class="fas fa-clock me-2"></i>Seg a Sex: 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Endereço para correspondência</h5>
+          <p class="small text-secondary mt-3">
+            Auto Escola Manoel Clark<br>
+            Centro de Formacao de Condutores Mc LTDA<br>
+            Avenida Vitória, 1667<br>
+            Centro – Linhares/ES<br>
+            CEP: 29900-085
+          </p>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small">
+          &copy; 2025 Auto Escola Manoel Clark. Todos os direitos reservados.
+        </div>
+        <div class="col-md-6 text-center text-md-end small">
+          <!-- POLÍTICA DE PRIVACIDADE EM DESTAQUE -->
+          <a href="#" class="text-decoration-none me-3" data-bs-toggle="modal" data-bs-target="#politicaPrivacidadeModal">Política de Privacidade</a>
+          <a href="#" class="text-decoration-none">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL POLÍTICA DE PRIVACIDADE (conteúdo simples) -->
+  <div class="modal fade" id="politicaPrivacidadeModal" tabindex="-1" aria-labelledby="politicaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="politicaModalLabel">Política de Privacidade</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Auto Escola Manoel Clark</strong> – CNPJ 38.799.350/0001-32</p>
+          <p>A sua privacidade é importante para nós. Esta política descreve como coletamos, usamos e protegemos suas informações pessoais.</p>
+          <h6>1. Coleta de Informações</h6>
+          <p>Coletamos apenas os dados necessários para fornecer nossos serviços de formação de condutores, como nome, e-mail, telefone e informações de documentos (CNH, CPF, etc.), sempre com o seu consentimento.</p>
+          <h6>2. Uso das Informações</h6>
+          <p>Utilizamos seus dados para: agendamento de aulas, comunicação sobre serviços, emissão de documentos e obrigações legais junto aos órgãos de trânsito.</p>
+          <h6>3. Compartilhamento</h6>
+          <p>Não vendemos ou alugamos seus dados. Compartilhamos apenas com órgãos reguladores (DETRAN, Receita Federal) quando exigido por lei.</p>
+          <h6>4. Segurança</h6>
+          <p>Adotamos medidas técnicas e administrativas para proteger suas informações contra acessos não autorizados.</p>
+          <h6>5. Seus Direitos</h6>
+          <p>Você pode solicitar a correção, atualização ou exclusão dos seus dados entrando em contato pelo e-mail: cfcmanoelclarcksm@hotmail.com.</p>
+          <p class="mt-4 small text-muted">Última atualização: Abril/2025.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
